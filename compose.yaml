@@ -1,0 +1,13 @@
+services:
+  web:
+    build: ./chatapp_django
+    command: python manage.py runserver 0.0.0.0:8000
+    volumes:
+      - ./chatapp_django:/app
+    ports:
+      - "8000:8000"
+    environment:
+      - POSTGRES_NAME=postgres
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+

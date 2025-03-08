@@ -1,0 +1,3 @@
+[submodule "chatapp_django"]
+	path = chatapp_django
+	url = ./chatapp_django
