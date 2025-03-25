@@ -1,5 +1,8 @@
 services:
   backend:
+
+    volumes:
+      - ./chatapp_django/chat/migrations:/app/chat/migrations
     build: ./chatapp_django
     command: python manage.py runserver 0.0.0.0:8000
     develop:
