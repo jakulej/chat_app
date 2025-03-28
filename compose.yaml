@@ -1,15 +1,9 @@
 services:
   backend:
-
     volumes:
-      - ./chatapp_django/chat/migrations:/app/chat/migrations
+      - ./chatapp_django:/app
     build: ./chatapp_django
     command: python manage.py runserver 0.0.0.0:8000
-    develop:
-      watch:
-        - action : sync
-          path: ./chatapp_django
-          target: /app
     ports:
       - "8000:8000"
     env_file:
@@ -22,3 +16,8 @@ services:
     ports:
       - "5432:5432"
     restart: always
+  redis:
+    container_name: redis
+    image: redis:7
+    ports:
+      - "6379:6397"
