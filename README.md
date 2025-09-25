@@ -34,7 +34,11 @@ docker compose up
 ` http:localhost:8000 '
 
 ## Screenshots
+### Login
 ![Login Page](doc/images/login.png)
+### Chat View
 ![Chat Room](doc/images/chat.png)
+### Add Friend
 ![Add Friend](doc/images/friends.png)
+### Create Group
 ![Add Group](doc/images/group.png)
