@@ -23,7 +23,7 @@ Users can create accounts, log in, and exchange messages inside chat rooms.
 ### 1. Clone the repository
 ```bash
 git clone https://github.com/your-username/chat-app.git
-cd chat-app
+git submodule update
 ```
 ### 2. Run the app
 ```bash
